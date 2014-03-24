@@ -1,0 +1,8 @@
+今天尝试着做一些slider进度条的控件，从而采用全新的开发方式storyboard,之前混用搞得头晕脑胀的，
+而且本次尝试使用第三方的开源库CircularSlider,所以在storyboard中添加View时把class修改为
+CircularSlider，所以之后我们在拖拽控件的时候会发现如下变化：
+@property (strong, nonatomic) IBOutlet UICircularSlider *slider3;
+此时slider3已经顺利成为了UICircularSlider的对象，我们便可以使用其中的方法了。
+并在各个界面使用时别忘记了import该文件#import"UICircularSlider.h"
+之后在为slider1和slider3添加value_change触发事件，这样一个变化，另外一个也随之变化。
+上面的数字显示的是百分比。
